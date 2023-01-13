@@ -1,4 +1,5 @@
 {
+  "homepage": "http://binilj04.github.io/pdf-from-images-react-app",
   "name": "pdf-from-images-react-app",
   "version": "0.1.0",
   "description": "React web app for generating a PDF file from uploaded images",
@@ -31,6 +32,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -52,5 +55,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
